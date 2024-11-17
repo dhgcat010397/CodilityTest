@@ -5,7 +5,7 @@ def check_valid(S):
     return re.match(r'^[a-z]+$', S) is not None
 
 def solution(S):
-    if check_valid(S) is False:
+    if not check_valid(S):
         return -1 
     
     all_substrings = []
