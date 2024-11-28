@@ -32,7 +32,7 @@ def solution(T):
     #     idx += 1
 
     # improve code
-    # instead of creating the array "order", we just need to create a ver "order" with its value equal to length of the array "order"
+    # instead of creating the array "order", we just need to create a var "order" with its value equal to length of the array "order"
     order = 0
     while order < sum_T:
         if idx == len(items):

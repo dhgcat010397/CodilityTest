@@ -48,11 +48,13 @@ if __name__ == "__main__":
     # result_2 = task5.solution([1, 2, 3, 4])
     # result_3 = task5.solution([7, 7, 7])
     # result_4 = task5.solution([10000])
+    # result_5 = task5.solution([5, 2, 6, 7, 8, 9, 3])
     # print(f"The total time that clients need to wait for all ordered items:")
     # print(f"Given T = [3, 1, 2], return: {result_1}")
     # print(f"Given T = [1, 2, 3, 4], return: {result_2}")
     # print(f"Given T = [7, 7, 7], return: {result_3}")
     # print(f"Given T = [10000], return: {result_4}")
+    # print(f"Given T = [5, 2, 6, 7, 8, 9, 3], return: {result_5}")
 
     # print("Task 6")
     # from Task.Task6 import solution as task6
@@ -66,12 +68,24 @@ if __name__ == "__main__":
     # print(f"Given A = [1, 5, 3, 3, 1, 3], return: {result_3}")
     # print(f"Given A = [3, 4], return: {result_4}")
 
-    print("Task 7")
-    from Task.Task7 import solution as task7
-    result_1 = task7.solution(["RR", "GR", "RG", "GR", "GR", "RR"])
-    result_2 = task7.solution(["GG", "GG", "RR", "GG", "RR"])
-    result_3 = task7.solution(["RG", "GR", "RG", "GR"])
-    result_4 = task7.solution(["RG", "RG", "RG"])
+    # print("Task 7")
+    # from Task.Task7 import solution as task7
+    # result_1 = task7.solution(["RR", "GR", "RG", "GR", "GR", "RR"])
+    # result_2 = task7.solution(["GG", "GG", "RR", "GG", "RR"])
+    # result_3 = task7.solution(["RG", "GR", "RG", "GR"])
+    # result_4 = task7.solution(["RG", "RG", "RG"])
+    # print(f"The length of the longest possible sequence that can be created using the provided tiles:")
+    # print(f'Given A = ["RR", "GR", "RG", "GR", "GR", "RR"], return: {result_1}')
+    # print(f'Given A = ["GG", "GG", "RR", "GG", "RR"], return: {result_2}')
+    # print(f'Given A = ["RG", "GR", "RG", "GR"], return: {result_3}')
+    # print(f'Given A = ["RG", "RG", "RG"], return: {result_4}')
+
+    print("Task 8")
+    from Task.Task8 import solution as task8
+    result_1 = task8.solution(["RR", "GR", "RG", "GR", "GR", "RR"])
+    result_2 = task8.solution(["GG", "GG", "RR", "GG", "RR"])
+    result_3 = task8.solution(["RG", "GR", "RG", "GR"])
+    result_4 = task8.solution(["RG", "RG", "RG"])
     print(f"The minimum number of domino tiles that must be removed:")
     print(f'Given A = ["RR", "GR", "RG", "GR", "GR", "RR"], return: {result_1}')
     print(f'Given A = ["GG", "GG", "RR", "GG", "RR"], return: {result_2}')
