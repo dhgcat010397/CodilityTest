@@ -54,20 +54,8 @@ if __name__ == "__main__":
     # print(f"Given T = [7, 7, 7], return: {result_3}")
     # print(f"Given T = [10000], return: {result_4}")
 
-    print("Task 6")
-    from Task.Task6 import solution as task6
-    result_1 = task6.solution([2, 4, 1, 3, 4, 6, 2, 4, 1, 6])
-    result_2 = task6.solution([5, 1, 2, 6, 6, 1, 3, 1, 4, 3, 4, 3, 4, 6, 1, 2, 4, 1, 6, 2])
-    result_3 = task6.solution([1, 5, 3, 3, 1, 3])
-    result_4 = task6.solution([3, 4])
-    print(f"The minimum number of domino tiles that must be removed:")
-    print(f"Given A = [2, 4, 1, 3, 4, 6, 2, 4, 1, 6], return: {result_1}")
-    print(f"Given A = [5, 1, 2, 6, 6, 1, 3, 1, 4, 3, 4, 3, 4, 6, 1, 2, 4, 1, 6, 2], return: {result_2}")
-    print(f"Given A = [1, 5, 3, 3, 1, 3], return: {result_3}")
-    print(f"Given A = [3, 4], return: {result_4}")
-
-    # print("Task 7")
-    # from Task.Task7 import solution as task7
+    # print("Task 6")
+    # from Task.Task6 import solution as task6
     # result_1 = task6.solution([2, 4, 1, 3, 4, 6, 2, 4, 1, 6])
     # result_2 = task6.solution([5, 1, 2, 6, 6, 1, 3, 1, 4, 3, 4, 3, 4, 6, 1, 2, 4, 1, 6, 2])
     # result_3 = task6.solution([1, 5, 3, 3, 1, 3])
@@ -77,3 +65,15 @@ if __name__ == "__main__":
     # print(f"Given A = [5, 1, 2, 6, 6, 1, 3, 1, 4, 3, 4, 3, 4, 6, 1, 2, 4, 1, 6, 2], return: {result_2}")
     # print(f"Given A = [1, 5, 3, 3, 1, 3], return: {result_3}")
     # print(f"Given A = [3, 4], return: {result_4}")
+
+    print("Task 7")
+    from Task.Task7 import solution as task7
+    result_1 = task7.solution(["RR", "GR", "RG", "GR", "GR", "RR"])
+    result_2 = task7.solution(["GG", "GG", "RR", "GG", "RR"])
+    result_3 = task7.solution(["RG", "GR", "RG", "GR"])
+    result_4 = task7.solution(["RG", "RG", "RG"])
+    print(f"The minimum number of domino tiles that must be removed:")
+    print(f'Given A = ["RR", "GR", "RG", "GR", "GR", "RR"], return: {result_1}')
+    print(f'Given A = ["GG", "GG", "RR", "GG", "RR"], return: {result_2}')
+    print(f'Given A = ["RG", "GR", "RG", "GR"], return: {result_3}')
+    print(f'Given A = ["RG", "RG", "RG"], return: {result_4}')
