@@ -1,3 +1,7 @@
+'''
+    Problem: TotalWaitingTime
+    Source: Codility_algo_mid.pdf
+'''
 
 class Item:
     def __init__(self,id=0):
