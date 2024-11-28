@@ -16,15 +16,26 @@ def solution(T):
         items.append(Item(i))
 
     sum_T = sum(T)
-    order = []
     idx = 0
+    # order = []
 
-    while len(order) < sum_T:
+    # while len(order) < sum_T:
+    #     if idx == len(items):
+    #         idx = 0
+    #     if items[idx].time < T[idx]:
+    #         items[idx].update_time_by_id(idx,len(order))
+    #         order.append(items[idx])
+    #     idx += 1
+
+    # improve code
+    # instead of creating the array "order", we just need to create a ver "order" with its value equal to length of the array "order"
+    order = 0
+    while order < sum_T:
         if idx == len(items):
             idx = 0
         if items[idx].time < T[idx]:
-            items[idx].update_time_by_id(idx,len(order))
-            order.append(items[idx])
+            items[idx].update_time_by_id(idx,order)
+            order += 1
         idx += 1
 
     total_time = [item.last_idx + 1 for item in items]

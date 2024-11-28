@@ -4,6 +4,7 @@ from Task.Task2 import solution as task2
 from Task.Task3 import solution as task3
 from Task.Task4 import solution as task4
 from Task.Task5 import solution as task5
+from Task.Task6 import solution as task6
 
 
 if __name__ == "__main__":
@@ -45,7 +46,17 @@ if __name__ == "__main__":
     # else:
     #     print(f"The earliest time when the frog can jump to the other side of the river is: {count} seconds")
     
-    print("Task 5")
+    # print("Task 5")
+    # N = int(input("Input size of your array T: "))
+    # print("Enter you array T:")
+    # T = []
+    # for i in range(N):
+    #     pos = int(input(f"T[{i}] = "))
+    #     T.append(pos)
+    # total_time = task5.solution(T)
+    # print(f"The total time that clients need to wait for all ordered items: {total_time} hours")
+
+    print("Task 6")
     N = int(input("Input size of your array T: "))
     print("Enter you array T:")
     T = []
