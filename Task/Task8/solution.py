@@ -13,30 +13,61 @@
     above. If there is more than one possible answer, the function may return any of them.
 '''
 
-from itertools import permutations
+# from itertools import permutations
+
+# def solution(AA, AB, BB):
+#     str_AA = ["AA"] * AA
+#     str_AB = ["AB"] * AB
+#     str_BB = ["BB"] * BB
+#     str_list = str_AA + str_AB + str_BB
+
+#     sequence_list = []
+
+#     sequence_len = len(str_list)
+#     while sequence_len > 0:
+#         permutations_ = permutations(str_list, sequence_len)
+#         for perm in permutations_:
+#             sequence = "".join(perm)
+#             if "AAA" not in sequence and "BBB" not in sequence:
+#                 sequence_list.append(sequence)
+#         sequence_len -= 1
+
+#     sequence_list = list(set(sequence_list))
+    
+#     print(f"All sequences: {sequence_list}")
+#     longest_sequences = [s for s in sequence_list if len(s) == max(map(len, sequence_list))]
+#     print(f"Length of longest sequence: {len(longest_sequences[0]) if len(longest_sequences) > 0 else 0}")   
+#     return longest_sequences
+
+def add_AA(str, AA):
+    result = ""
+
+    return result
+
+def add_AB(str, AB):
+    result = ""
+    
+    return result
+
+def add_BB(str, BB):
+    result = ""
+    
+    return result
 
 def solution(AA, AB, BB):
-    str_AA = ["AA"] * AA
-    str_AB = ["AB"] * AB
-    str_BB = ["BB"] * BB
-    str_list = str_AA + str_AB + str_BB
+    sAA = [""] # string start with "AA"
+    sAB = [""] # string start with "AB"
+    sBB = [""] # string start with "BB"
 
-    sequence_list = []
-
-    sequence_len = len(str_list)
-    while sequence_len > 0:
-        permutations_ = permutations(str_list, sequence_len)
-        for perm in permutations_:
-            sequence_list.append("".join(perm))
-        sequence_len -= 1
-
-    sequence_list = list(set(sequence_list))
-
-    valid_sequence_list = []
-    for sequence in sequence_list:
-        if "AAA" not in sequence and "BBB" not in sequence:
-            valid_sequence_list.append(sequence)
+    if AA > 0:
+        sAA.append("AA")
+    if AB > 0:
+        sAB.append("AB")
+    if BB > 0:
+        sBB.append("BB")
     
-    print(f"All sequences: {valid_sequence_list}")
-    longest_sequences = [s for s in valid_sequence_list if len(s) == max(map(len, valid_sequence_list))]   
-    return longest_sequences
+    # with sAA
+    if BB > 0:
+        add_BB(sAA, AA-1, AB, BB)
+
+    return 0
