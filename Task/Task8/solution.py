@@ -55,6 +55,14 @@ def add_BB(str, BB):
     return result
 
 def solution(AA, AB, BB):
+    '''
+    AA -> 	AABB
+    BB -> 	BBAA
+	        BBAB
+    AB -> 	ABAA
+	        ABAB
+    '''
+    
     sAA = [""] # string start with "AA"
     sAB = [""] # string start with "AB"
     sBB = [""] # string start with "BB"
